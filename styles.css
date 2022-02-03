@@ -1,0 +1,69 @@
+:root {
+    --page-height: 750px;
+    --page-background-color: #202020;
+    --form-light-grey: #F8F8F8;
+    --form-dark-grey: #DCDCDC;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--page-background-color);
+}
+
+.form-container {
+    display: flex;
+    padding: 10px;
+}
+
+.form-img {
+    width: min(35vw, 378px);
+    height: var(--page-height);
+}
+
+.form-display {
+    display: flex;
+    flex-direction: column;
+    width: min(65vw, 702px);
+}
+
+.form-contents {
+    height: calc(var(--page-height) / 3);
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.upper {
+    background-color: var(--form-dark-grey);
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-light-grey);
+    padding-top: 10px;
+}
+
+.lower {
+    background-color: var(--form-dark-grey);
+}
+
+/* Form input / label styling */
+
+p {
+    margin-bottom: 10px;
+}
+
+input, label {
+    display: block;
+    width: 202px;
+}
+
+.form-row-upper, .form-row-middle, .form-row-lower {
+    display:flex;
+    margin-bottom: 15px;
+    gap: 50px;
+}
