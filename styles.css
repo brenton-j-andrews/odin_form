@@ -1,8 +1,18 @@
+/* Overall Page Styling, search "||" to jump sections. */
+
 :root {
     --page-height: 750px;
     --page-background-color: #202020;
     --form-light-grey: #F8F8F8;
     --form-dark-grey: #DCDCDC;
+
+    --btn-light-copper: #b87333;
+    --btn-dark-cooper: #a4672d;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url("Norse-Bold.otf");
 }
 
 body {
@@ -19,11 +29,6 @@ body {
     padding: 10px;
 }
 
-.form-img {
-    width: min(35vw, 378px);
-    height: var(--page-height);
-}
-
 .form-display {
     display: flex;
     flex-direction: column;
@@ -36,8 +41,63 @@ body {
     padding: 25px;
 }
 
+/* || Form image styling */
+
+.form-img {
+    width: min(35vw, 378px);
+    height: var(--page-height);
+}
+
+.form-image-container a {
+    color: white;
+} 
+
+#photo-credit {
+    position: relative;
+    font-size: 10px;
+    left: 50px;
+    bottom: 35px;
+    color: white;
+}
+
+.logo-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, .25);
+    width: min(35vw, 378px);
+    height: 150px;
+    bottom: 687px;
+}
+
+
+.form-logo {
+    position: relative;
+    left: 68px;
+    top: 15px;
+    height: 120px;
+}
+
+#logo-text {
+    font-family: NorseBold;
+    font-size: 84px;
+    color: white;
+
+    position: relative;
+    width: 130px;
+    bottom: 175px;
+    left: 184px;
+}
+ 
+
+/* || Form input / label styling || */
+
 .upper {
     background-color: var(--form-dark-grey);
+}
+
+.form-upper-paragraph {
+    position: relative;
+    font-weight: bolder;
+    top: 75px;
 }
 
 .middle {
@@ -51,19 +111,41 @@ body {
     background-color: var(--form-dark-grey);
 }
 
-/* Form input / label styling */
-
-p {
+.form-middle-paragraph {
     margin-bottom: 10px;
 }
 
 input, label {
     display: block;
     width: 202px;
+    font-family: 'Advent Pro', sans-serif;
 }
 
 .form-row-upper, .form-row-middle, .form-row-lower {
     display:flex;
     margin-bottom: 15px;
     gap: 50px;
+}
+
+/* || Lower form / submit button styling */
+.submit-btn {
+    background-color:  var(--btn-light-copper);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 2px var(--btn-dark-cooper);
+}
+
+.submit-btn:hover {
+    background-color: var(--btn-dark-cooper);
+}
+
+.log-in-anchor {
+    color: var(--btn-light-copper);
+    text-decoration: none;
+}
+
+.log-in-anchor:hover {
+    color: var(--btn-dark-copper);
 }
