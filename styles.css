@@ -5,6 +5,7 @@
     --page-background-color: #202020;
     --form-light-grey: #F8F8F8;
     --form-dark-grey: #DCDCDC;
+    --input-border-color: #E5E7EB;
 
     --btn-light-copper: #b87333;
     --btn-dark-cooper: #a4672d;
@@ -121,6 +122,17 @@ input, label {
     font-family: 'Advent Pro', sans-serif;
 }
 
+input {
+    border: 2px solid var(--input-border-color);
+}
+
+input:focus {
+    outline: 2px solid var(--btn-light-copper);
+}
+
+.required::after {
+    content: "*";
+}
 .form-row-upper, .form-row-middle, .form-row-lower {
     display:flex;
     margin-bottom: 15px;
